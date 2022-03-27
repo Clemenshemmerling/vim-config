@@ -1,0 +1,5 @@
+ts|tsx|buffer
+j|jsx|buffer
+t|tsx|buffer
+js|jsx|buffer
+jav|javascript|around

@@ -5,9 +5,8 @@
 ###### 2 Create a two symbolic links
 
 ````
-```
 ln -s .config/.vimrc .vimrc
 
 ln -s .config/.vim .vim
-```
+
 ````

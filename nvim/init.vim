@@ -25,10 +25,10 @@ set smartcase
 set laststatus=2
 set noshowmode
 
-" Use Neovim-local vim-plug files, not ~/.vim.
-let s:plug_path = stdpath('data') . '/site/autoload/plug.vim'
-if empty(glob(s:plug_path)) && !empty(glob(expand('~/.vim/autoload/plug.vim')))
-  execute 'source' fnameescape(expand('~/.vim/autoload/plug.vim'))
+" Load the vim-plug copy tracked with this Neovim config.
+let s:plug_path = stdpath('config') . '/autoload/plug.vim'
+if !empty(glob(s:plug_path))
+  execute 'source' fnameescape(s:plug_path)
 endif
 
 source ~/.config/nvim/plugins.vim

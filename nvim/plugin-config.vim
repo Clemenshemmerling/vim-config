@@ -45,7 +45,13 @@ let g:go_highlight_functions = 1
 let g:go_highlight_function_calls = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_extra_types = 1
-let g:go_fmt_command = 'goimports'
+" Keep vim-go focused on syntax/highlighting; CoC handles Go language services.
+let g:go_gopls_enabled = 0
+let g:go_code_completion_enabled = 0
+let g:go_def_mapping_enabled = 0
+let g:go_doc_keywordprg_enabled = 0
+let g:go_fmt_autosave = 0
+let g:go_metalinter_autosave = 0
 
 " Ruby
 let ruby_operators = 1

@@ -35,5 +35,11 @@ source ~/.config/nvim/plugins.vim
 source ~/.config/nvim/plugin-config.vim
 source ~/.config/nvim/maps.vim
 
-silent! colorscheme gruvbox
+let g:sonokai_style = 'andromeda'
+let g:sonokai_enable_italic = 1
+let g:sonokai_better_performance = 1
+silent! colorscheme sonokai
+if !exists('g:colors_name') || g:colors_name !=# 'sonokai'
+  silent! colorscheme gruvbox
+endif
 highlight Normal ctermbg=NONE guibg=NONE

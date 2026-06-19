@@ -14,6 +14,7 @@ Plug 'StanAngeloff/php.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'morhetz/gruvbox'
+Plug 'sainnhe/sonokai'
 
 " Navigation and editing
 Plug 'scrooloose/nerdtree'

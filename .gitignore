@@ -1,0 +1,29 @@
+# Ignore everything in ~/.config by default.
+# This repo is only for Neovim configuration.
+*
+
+# Keep Git metadata and this ignore file visible.
+!.gitignore
+!README.md
+
+# Track only Neovim config files.
+!nvim/
+!nvim/**
+
+# Do not track installed plugins, caches, sessions, logs, or local state.
+nvim/pack/
+nvim/.netrwhist
+nvim/plugin/packer_compiled.lua
+nvim/lazy-lock.json
+nvim/.luarc.json
+nvim/tags
+nvim/spell/*.add.spl
+nvim/spell/*.add.sug
+
+# CoC local/runtime data should be installed locally, not committed.
+nvim/coc/extensions/
+nvim/coc/memos.json
+nvim/coc/suggest.txt
+
+# Vim-plug installs plugins here with the config below.
+nvim/plugged/
